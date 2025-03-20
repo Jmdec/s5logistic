@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.calendar-container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.fc .fc-daygrid-day {
+  padding: 15px;
+  font-size: 18px;
+}
+
+.fc {
+  font-size: 16px;
+}
+
+
+.event-modal {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  width: 250px;
+  border-radius: 8px;
+}
+
+.modal-content {
+  padding: 10px;
+}
+
+.modal-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid white;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
